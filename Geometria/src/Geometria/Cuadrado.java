@@ -11,6 +11,11 @@ public class Cuadrado extends Figura {
         this.setLado(lado);
     }
 
+    @Override
+    public float calcularArea() {
+        return (float) Math.pow(this.lado, 2);
+    }
+
     public void setLado(float lado) {
         if (lado > 0) {
             this.lado = lado;
